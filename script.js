@@ -5,24 +5,24 @@ const lapis = {
     temBorrachaAtras: false
     }
 {
-    const caixaPrincipal = document.querySelector(“.caixa-principal”);
+    const caixaPrincipal = document.querySelector(".caixa-principal");
     
-    const caixaPerguntas = document.querySelector(“.caixa-perguntas”);
+    const caixaPerguntas = document.querySelector(".caixa-perguntas");
     
-    const caixaAlternativas = document.querySelector(“.caixa-alternativas”);
+    const caixaAlternativas = document.querySelector(".caixa-alternativas");
     
-    const caixaResultado = document.querySelector(“.caixa-resultado”);
+    const caixaResultado = document.querySelector(".caixa-resultado");
     
-    const textoResultado = document.querySelector(“.texto- resultado”);
+    const textoResultado = document.querySelector(".texto- resultado");
     
-    const perguntas = [{ enunciado: “Pergunta 1”, alternativas: [“Alternativa 1”, “Alternativa 2”],},
+    const perguntas = [{ enunciado: "Assim que saiu da escola, você sedepara com uma nova tecnologia: um chat que consegueresponder a todas as dúvidas que uma pessoa pode ter.Além disso, o chat também gera imagens e áudioshiper-realistas. Qual o seu primeiro pensamento?", alternativas: ["Isso é assustador!", "Isso é maravilhoso!"],}];
 }
     
     {  
-    enunciado: “Pergunta 2”,
-    alternativas: [“Alternativa 1”, “Alternativa 2”],
-    },
-    ];
+    enunciado: "Pergunta 2",
+    alternativas:["Alternativa 1", "Alternativa 2"];
+    
+    }
 
     function mostraPergunta() {
         perguntaAtual = perguntas[atual];
@@ -31,19 +31,10 @@ const lapis = {
         }
         function mostraAlternativas() {
 
-            {
+            
 
-enunciado: “Assim que saiu da escola, você se
-depara com uma nova tecnologia: um chat que consegue
-responder a todas as dúvidas que uma pessoa pode ter.
-Além disso, o chat também gera imagens e áudios
-hiper-realistas. Qual o seu primeiro pensamento?”,
 
-alternativas: [
-“Isso é assustador!”,
-“Isso é maravilhoso!”
-]
-},
+}
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
@@ -60,18 +51,96 @@ function mostraPergunta() {
                 for (const alternativa of perguntaAtual.alternativas) {
                 const botaoAlternativas = document.
                 
-                createElement(“button”);
+                createElement("button");
                 
                 botaoAlternativas.textContent = alternativa;
 
-<div class=”caixa-alternativas”></div>     
+<div class="caixa-alternativas"></div>     
 
 const caixaAlternativas = document.querySelector
-(“.caixa-alternativas”);
+(".caixa-alternativas");
 
 function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
-    const botaoAlternativas = document. createElement(“button”);
+    const botaoAlternativas = document. createElement("button");
     
     botaoAlternativas.textContent = alternativa;
     caixaAlternativas.appendChild(botaoAlternativas);
+
+    function mostraPergunta() {
+        perguntaAtual = perguntas[atual];
+        caixaPerguntas.textContent = perguntaAtual.enunciado
+        mostraAlternativas();
+        }
+        function mostraAlternativas() {
+
+            enunciado: "Assim que saiu da escola, você sedepara com uma nova tecnologia: um chat que consegueresponder a todas as dúvidas que uma pessoa pode ter.Além disso, o chat também gera imagens e áudioshiper-realistas. Qual o seu primeiro pensamento?",
+
+alternativas: [
+"Isso é assustador!",
+"Isso é maravilhoso!",
+]
+}
+{function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document. createElement("button");
+    
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);}
+}
+}
+
+const perguntas = [
+    {
+    enunciado: "Pergunta 1",
+    alternativas: ["Alternativa 1", "Alternativa 2"],
+    },
+    
+    {
+    enunciado: "Pergunta 2",
+    alternativas: ["Alternativa 1", "Alternativa 2"],
+    },
+
+    function mostraAlternativa() {
+        for (const alternativa of perguntaAtual.alternativas)
+        {
+        const botaoAlternativas = document. createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+        }
+        }
+
+    function mostraAlternativa() {
+            for (const alternativa of perguntaAtual.alternativas) {
+            const botaoAlternativas = document. createElement("button");
+            botaoAlternativas.textContent = alternativa.texto;
+            botaoAlternativas.addEventListener("click")
+            function () {
+            atual++;
+            mostraPergunta();
+            };
+            caixaAlternativas.appendChild(botaoAlternativas);
+            }
+            }    
+
+            const perguntas = [
+                {
+                enunciado: "Insira o enunciado da Pergunta 1",
+                alternativas: ["Alternativa 1", "Alternativa 2"],
+                },
+                {
+                enunciado: "Insira o enunciado da Pergunta 2",
+                alternativas: ["Alternativa 1", "Alternativa 2"],
+                },
+                {
+                enunciado: "Insira o enunciado da Pergunta 3",
+                alternativas: ["Alternativa 1", "Alternativa 2"],
+                }
+                ];        
+                let atual = 0;
+                let perguntaAtual;
+                function mostraPergunta() {
+                    perguntaAtual = perguntas[atual];
+                    caixaPerguntas.textContent = perguntaAtual.enunciado;
+                    }
+                    mostraPergunta()
